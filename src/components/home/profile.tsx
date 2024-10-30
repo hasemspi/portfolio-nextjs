@@ -1,6 +1,7 @@
 import Image from "next/image";
 import profileImage from "../../asset/image/abul-hasem.png";
 import Downloadcv from "./downloadcv";
+import SocialPage from "./social";
 
 const ProfileHome = () => {
     return (
@@ -18,6 +19,7 @@ const ProfileHome = () => {
       <p className="text-sm sm:text-base">
       As a Full-Stack Web Developer, I specialize in building robust and scalable web applications that deliver seamless user experiences. With a strong foundation in both front-end and back-end technologies, I am adept at transforming complex ideas into functional solutions.
       </p>
+      <SocialPage/>
       <Downloadcv/>
     </div>
   </div>
