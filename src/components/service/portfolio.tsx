@@ -46,7 +46,7 @@ const initialWorksData: WorkItem[] = [
         image: webdevelopment.src
     },
     {
-        id: 3,
+        id: 4,
         category: 'branding',
         title: 'Delivery App Wireframe',
         alt: 'Delivery App Wireframe',
@@ -55,7 +55,7 @@ const initialWorksData: WorkItem[] = [
         image: '/assets/images/resources/works/3.svg'
     },
     {
-        id: 4,
+        id: 5,
         category: 'creative',
         title: 'Onboarding Motivation',
         alt: 'Onboarding Motivation',
