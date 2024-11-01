@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --background: #ffffff;
   --foreground: #000000;
 }
@@ -12,7 +12,7 @@
     --background: #131313;
     --foreground: #fff;
   }
-}
+} */
 
 
 @layer utilities {
@@ -25,11 +25,15 @@
 html {
   --color-background: #131313;
   --color-text: #fff;
+  --navbar-background: #131313; /* Dark mode navbar color */
+  --input-background:#131313;
 }
 
 html.dark {
   --color-background: #ffffff;
   --color-text: #000000;
+  --navbar-background: #fff; /* Light mode navbar color */
+  --input-background:#cac8c8;
 }
 
 body {

@@ -1,8 +1,9 @@
+import MyBlog from "@/components/blog/myblog";
 
 const Blog = () => {
     return (
       <div className="container">
-          <p>Blog Page</p>
+         <MyBlog/>
         </div>
     );
 };

@@ -1,9 +1,10 @@
+import MySkillsPage from "@/components/home/mySkills";
 
 
 const About = () => {
     return (
         <div className="container">
-            <p>About page</p>
+           <MySkillsPage/>
         </div>
     );
 };

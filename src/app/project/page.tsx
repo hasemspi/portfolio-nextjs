@@ -1,9 +1,10 @@
+import Portfolio from "@/components/service/portfolio";
 
 
 const Project = () => {
     return (
         <div className="container">
-            <p>Welcome to Project page</p>
+            <Portfolio/>
         </div>
     );
 };
