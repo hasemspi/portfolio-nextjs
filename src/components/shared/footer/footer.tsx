@@ -1,20 +1,22 @@
+import Link from "next/link";
+
 const Footer = () => {
     return (
   <div className="container">
     <footer className="footer text-base-content p-10 style={{ backgroundColor: 'var(--background)' }}">
       <nav>
         <h6 className="footer-title">Services</h6>
-        <a className="link link-hover">Branding</a>
-        <a className="link link-hover">Design</a>
-        <a className="link link-hover">Marketing</a>
-        <a className="link link-hover">Advertisement</a>
+        <Link href="#">Digital Marketing</Link>
+        <Link href="#">Web Development</Link>
+        <Link href="#">UI/UX Design</Link> 
+        <Link href="#">WP Development</Link> 
       </nav>
       <nav>
         <h6 className="footer-title">Company</h6>
-        <a className="link link-hover">About us</a>
-        <a className="link link-hover">Contact</a>
-        <a className="link link-hover">Jobs</a>
-        <a className="link link-hover">Press kit</a>
+        <Link href="/about">About us</Link>
+        <Link href="/contact">Contact</Link>
+        <Link href="#">Job</Link> 
+        <Link href="/blog">Blog</Link> 
       </nav>
       <nav>
         <h6 className="footer-title">Social</h6>

@@ -1,7 +1,7 @@
 import Link from "next/link";
 const Downloadcv = () => {
   return (
-    <Link href="/abulhasemCV.pdf" passHref>
+    <Link href="/abulhasemCV.pdf" target="_blank" passHref>
       <button
         className="btn btn-outline mt-4 btn-secondary px-6 py-2 rounded-md border-2 border-gray-500 text-gray-500 hover:bg-gray-500 hover:text-white transition-colors"
       >
