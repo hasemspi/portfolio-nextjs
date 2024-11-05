@@ -4,6 +4,7 @@ import ThemeSwitchProvider from './../../../app/themeswitch/themeswitch';
 const menuItems = [
   { name: "Home", href: "/" },
   { name: "Project", href: "/project" },
+  { name: "Service", href: "/service" },
   { name: "Blog", href: "/blog" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" }

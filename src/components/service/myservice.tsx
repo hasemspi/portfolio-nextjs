@@ -1,37 +1,10 @@
 import Image from "next/image";
-import digitalservice from "../../asset/image/myservice/1.png";
-import webdevelopment from "../../asset/image/myservice/service-2.svg";
-import wpicon from "../../asset/image/myservice/icons8wordpress.png";
-import uiuxdesign from "../../asset/image/myservice/4.png";
+
+import servicesData from '@/actions/createservice'; 
 import Link from "next/link";
 const Myservice = () => {
 
-  const servicesData = [
-    {
-      id: 1,
-      image: digitalservice, // Path to the image if available
-      title: "Digital Marketing",
-      description: "Continue indulged speaking the was horrible for domestic position. Seeing get rather."
-    },
-    {
-      id: 2,
-      image: webdevelopment, // Path to the image if available
-      title: "Web Development",
-      description: "Continue indulged speaking the was horrible for domestic position. Seeing get rather."
-    },
-    {
-      id: 3,
-      image: uiuxdesign, // Path to the image if available
-      title: "UI/UX Design",
-      description: "Continue indulged speaking the was horrible for domestic position. Seeing get rather."
-    },
-    {
-      id: 4,
-      image: wpicon, // Path to the image if available
-      title: "WP Development",
-      description: "Continue indulged speaking the was horrible for domestic position. Seeing get rather."
-    }
-  ];
+
 
   return (
     <div>
@@ -66,11 +39,15 @@ const Myservice = () => {
                     <span className="text-gray-500">Image Not Found</span>
                   )}
                 </div>
-                <h3 className="text-xl font-semibold  mb-2">{service.title}</h3>
-                <p className="text-left mb-4">{service.description}</p>
-                <Link href="#" className="absolute bottom-6left-6 text-blue-500 group-hover:translate-x-2 transition-transform duration-300">
-                  Read More
-                </Link>
+                <h2 className="text-xl font-semibold mb-2 text-blue-500">
+              <Link href={`/service/${service.id}`}>
+                {service.title}
+              </Link>
+            </h2>
+            <p className="text-left mb-4">{service.description}</p>
+            <Link href={`/service/${service.id}`} className="absolute bottom-6 left-6 text-blue-500 group-hover:translate-x-2 transition-transform duration-300">
+              Read More
+            </Link>
               </div>
             ))}
           </div>
