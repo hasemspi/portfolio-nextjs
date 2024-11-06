@@ -5,7 +5,7 @@ interface ServiceParams {
     serviceid: string;
 }
 
-const ServiceDetails = async ({ params }: { params: ServiceParams }) => {
+const ServiceDetails = async ({ params }: { params:Promise<ServiceParams>}) => {
     const { serviceid } = await params;
 
     // Find the service that matches the serviceId
