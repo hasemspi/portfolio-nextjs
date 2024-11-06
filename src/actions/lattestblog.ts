@@ -2,7 +2,6 @@
 import digitalservice from "../asset/image/portfolio/2.jpg";
 import webdevelopment from "../asset/image/myservice/service-2.svg";
 import wpicon from "../asset/image/myservice/icons8wordpress.png";
-import uiuxdesign from "../asset/image/myservice/4.png";
 
 const lattestBlog = [
     {

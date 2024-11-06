@@ -5,7 +5,6 @@ import wpicon from "../asset/image/myservice/icons8wordpress.png";
 import uiuxdesign from "../asset/image/myservice/4.png";
 import song_blog from "../asset/image/myservice/song_blog.png";
 import detaipng from "../asset/image/myservice/detaipng.png";
-import { LocaleRouteNormalizer } from "next/dist/server/normalizers/locale-route-normalizer";
 
 const servicesData = [
     {
@@ -50,7 +49,7 @@ const servicesData = [
       "description": "Dive deep into the realm of artificial intelligence (AI) and its transformative influence on industries, society, and our daily lives. Explore machine learning, natural language processing, and the ethical considerations surrounding AI development.",
       "publish_date": "2024-03-05",
       "author_name": "Samin Israr Ravi",
-      "image": wpicon,
+      "image": uiuxdesign,
       "total_likes": "1350"
     },
     {
@@ -59,7 +58,7 @@ const servicesData = [
       "description": "Navigate the evolving landscape of cybersecurity and the critical role it plays in safeguarding digital assets. From advanced threat detection to ethical hacking, this blog examines the strategies and technologies shaping the future of online security.",
       "publish_date": "2024-03-06",
       "author_name": "Mehedi Imun Anik",
-      "image": wpicon,
+      "image": digitalservice,
       "total_likes": "950"
     },
     {
@@ -68,7 +67,7 @@ const servicesData = [
         "description": "Navigate the evolving landscape of cybersecurity and the critical role it plays in safeguarding digital assets. From advanced threat detection to ethical hacking, this blog examines the strategies and technologies shaping the future of online security.",
         "publish_date": "2024-03-06",
         "author_name": "Mehedi Imun Anik",
-        "image": wpicon,
+        "image": song_blog,
         "total_likes": "950"
       },
       {
