@@ -1,83 +1,18 @@
 "use client";
 import { useState } from 'react';
 import Image from 'next/image'; 
-import project1 from "../../asset/image/portfolio/2.jpg";
-import project2 from "../../asset/image/portfolio/3.jpg";
-import project3 from "../../asset/image/portfolio/4.jpg";
-import project4 from "../../asset/image/portfolio/6.jpg";
-import webdevelopment from "../../asset/image/myservice/service-2.svg";
-import wordrepss from "../../asset/image/portfolio/wordrepss.png";
 import Link from 'next/link';
+import initialWorksData from '@/actions/createproject';
 
-// Define the interface for a work item
 interface WorkItem {
-    id: number;
-    category: string;
-    title: string;
-    alt: string;
-    link: string;
-    caption: string;
-    image?: string; // Make this optional
+  id: number;
+  category: string;
+  title: string;
+  alt: string;
+  link: string;
+  caption: string;
+  image?: string; // Make this optional
 }
-
-// Define the initial works data
-const initialWorksData: WorkItem[] = [
-    {
-        id: 1,
-        category: 'Wordpress',
-        title: 'Project Management Illustration',
-        alt: 'Project Management Illustration',
-        link: '#',
-        caption: 'Project Management Illustration',
-        image: project1.src // Use the imported variable directly
-    },
-    {
-        id: 2,
-        category: 'Wordpress',
-        title: 'Guest App Walkthrough Screens',
-        alt: 'Guest App Walkthrough Screens',
-        link: '#workDialog',
-        caption: 'Guest App Walkthrough Screens',
-        image: project2.src
-    },
-    {
-        id: 3,
-        category: 'NextJS',
-        title: 'Guest App Walkthrough Screens',
-        alt: 'Guest App Walkthrough Screens',
-        link: '#workDialog',
-        caption: 'Guest App Walkthrough Screens',
-        image: project3.src
-    },
-    {
-        id: 4,
-        category: 'PHP',
-        title: 'Delivery App Wireframe',
-        alt: 'Delivery App Wireframe',
-        link: 'https://www.youtube.com/watch?v=qf9z4ulfmYw',
-        caption: 'Delivery App Wireframe',
-        image: project4.src
-    },
-    {
-        id: 5,
-        category: 'Design',
-        title: 'Onboarding Motivation',
-        alt: 'Onboarding Motivation',
-        link: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240233494&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
-        caption: 'Onboarding Motivation',
-        image: webdevelopment.src
-    },
-    {
-        id: 6,
-        category: 'Digital Marketing',
-        title: 'Onboarding Motivation',
-        alt: 'Onboarding Motivation',
-        link: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240233494&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
-        caption: 'Onboarding Motivation',
-        image: wordrepss.src
-    }
-    
-];
 
 const Portfolio = () => {
     const [selectedCategory, setSelectedCategory] = useState<string>('All');
@@ -148,9 +83,9 @@ const Portfolio = () => {
               <div className="flex justify-center mt-4">
                 <div className="flex justify-between w-full max-w-xs space-x-4">
                   <button className="btn btn-outline btn-md px-4 py-2 btn-primary text-sm sm:text-base">Demo Link</button>
-                  <button className="text-blue-500 group-hover:translate-x-2 transition-transform duration-300">
+                  <Link href={`/project/${work.id}`} className="text-blue-500 group-hover:translate-x-2 transition-transform duration-300">
                     Read More
-                  </button>
+                  </Link>
                 </div>
               </div>
 
@@ -166,14 +101,14 @@ const Portfolio = () => {
         </div>
 
         {/* Load More Button */}
-        <div className="mt-10 block text-center w-full">
+        {/* <div className="mt-10 block text-center w-full">
             <Link href="#" className="absolute btn btn-outline btn-md px-4 py-2 btn-primary text-sm sm:text-base">
                 Read More
               </Link>
           <p className="noMorePosts text-gray-500 mt-4">
             {displayedWorks.length === 0 ? 'No works found in this category' : ''}
           </p>
-        </div>
+        </div> */}
       </div>
     </div>
   </div>

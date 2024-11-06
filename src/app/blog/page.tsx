@@ -1,9 +1,9 @@
-import MyBlog from "@/components/blog/myblog";
+import MainBlog from "./mainblog";
 
 const Blog = () => {
     return (
       <div className="container">
-         <MyBlog/>
+         <MainBlog/>
         </div>
     );
 };

@@ -1,40 +1,11 @@
 import Image from "next/image";
-import digitalservice from "../../asset/image/portfolio/2.jpg";
-import webdevelopment from "../../asset/image/myservice/service-2.svg";
-import wpicon from "../../asset/image/myservice/icons8wordpress.png";
-import uiuxdesign from "../../asset/image/myservice/4.png";
 import Link from "next/link";
+import servicesData from "@/actions/lattestblog";
 const MyBlog = () => {
-
-  const servicesData = [
-    {
-      id: 1,
-      image: digitalservice, // Path to the image if available
-      title: "Digital Marketing",
-      description: "Continue indulged speaking the was horrible for domestic position. Seeing get rather."
-    },
-    {
-      id: 2,
-      image: webdevelopment, // Path to the image if available
-      title: "Web Development",
-      description: "Continue indulged speaking the was horrible for domestic position. Seeing get rather."
-    },
-    {
-      id: 3,
-      image: uiuxdesign, // Path to the image if available
-      title: "UI/UX Design",
-      description: "Continue indulged speaking the was horrible for domestic position. Seeing get rather."
-    },
-    {
-      id: 4,
-      image: wpicon, // Path to the image if available
-      title: "WP Development",
-      description: "Continue indulged speaking the was horrible for domestic position. Seeing get rather."
-    }
-  ];
 
   return (
     <div>
+
       <section className="py-12 style={{ backgroundColor: 'var(--background)' }}">
 
         <div className="flex flex-col justify-center items-center mx-4 mb-10">
@@ -45,9 +16,8 @@ const MyBlog = () => {
             We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.
           </p>
         </div>
-
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {servicesData.map((service) => (
               <div
                 key={service.id}
