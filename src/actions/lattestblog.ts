@@ -30,6 +30,15 @@ const lattestBlog = [
       "author_name": "Fahim Ahammed Firoz",
       "image": wpicon,
       "total_likes": "800"
+    },
+    {
+      "id": "4",
+      "title": "The Blockchain Revolution: Beyond Cryptocurrencies",
+      "description": "Explore the underlying technology of cryptocurrencies – blockchain – and its potential to revolutionize industries beyond finance. Delve into smart contracts, decentralized applications (DApps), and the growing adoption of blockchain in various sectors.",
+      "publish_date": "2024-03-03",
+      "author_name": "Fahim Ahammed Firoz",
+      "image": digitalservice,
+      "total_likes": "800"
     }
    
   ];

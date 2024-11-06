@@ -17,7 +17,7 @@ const MyBlog = () => {
           </p>
         </div>
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {servicesData.map((service) => (
               <div
                 key={service.id}
@@ -42,7 +42,11 @@ const MyBlog = () => {
                     {service.title}
                   </Link>
                 </h3>
-                <p className="text-left mb-4">{service.description}</p>
+                <p className="text-left mb-4">
+                  {service.description.length > 170
+                    ? service.description.slice(0, 60) + "..."
+                    : service.description}
+                  </p>
                 <Link href="#" className="absolute bottom-6left-6 text-blue-500 group-hover:translate-x-2 transition-transform duration-300">
                   Read More
                 </Link>

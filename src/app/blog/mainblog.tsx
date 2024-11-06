@@ -1,14 +1,16 @@
 import Image from "next/image";
 import Link from "next/link";
 import blogData from "@/actions/createblog";
+import Catagory from "./catagory";
+import Lattestblog from "./lattestblog";
 
 const MainBlog = () => {
     return (
         <div>
             <section className="py-12" style={{ backgroundColor: 'var(--background)' }}>
-                <div className="flex flex-col justify-center items-center mx-4 mb-10">
-                    <h2 className="text-4xl font-bold text-center">My Blog</h2>
-                    <p className="mt-4 px-4 md:px-20 text-lg md:text-xl font-semibold text-center">
+                <div className="flex flex-col justify-center items-start mx-4 mb-10">
+                    <h2 className="text-4xl font-bold text-start">My Blog</h2>
+                    <p className="mt-4 text-lg md:text-xl font-semibold text-start">
                         We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.
                     </p>
                 </div>
@@ -60,9 +62,8 @@ const MainBlog = () => {
 
                     {/* Right section */}
                     <div className="col-span-12 md:col-span-3">
-                        <div className="card-body shadow-xl">
-                            <p className="card-title">Hello item</p>
-                        </div>
+                       <Catagory/>
+                       <Lattestblog/>
                     </div>
                 </div>
 
