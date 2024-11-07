@@ -37,7 +37,7 @@ const Portfolio = () => {
                     Recent Works
                 </h2>
                 <p className="mt-4 px-4 md:px-20 text-lg md:text-xl font-semibold text-center">
-                    We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.
+                Explore my recent projects showcasing expertise in Next.js, React, WordPress, and more. Each project highlights my commitment to creating functional, responsive, and visually appealing websites tailored to client needs and user experience.
                 </p>
             </div>
             <section id="works" className="relative py-5 w-full">

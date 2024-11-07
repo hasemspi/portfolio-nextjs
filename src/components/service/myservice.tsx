@@ -15,7 +15,7 @@ const Myservice = () => {
             My Quality Services
           </h2>
           <p className="mt-4 px-4 md:px-20 text-lg md:text-xl font-semibold text-center">
-            We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.
+          I deliver outstanding services in Next.js, React, WordPress, MySQL, PHP, HTML, CSS, and Joomla. My work ensures user-friendly, efficient, and responsive websites with dependable front-end and back-end support
           </p>
         </div>
 

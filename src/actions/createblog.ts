@@ -56,8 +56,8 @@ const servicesData = [
       "id": "6",
       "title": "Cybersecurity in the Digital Age",
       "description": "Navigate the evolving landscape of cybersecurity and the critical role it plays in safeguarding digital assets. From advanced threat detection to ethical hacking, this blog examines the strategies and technologies shaping the future of online security.",
-      "publish_date": "2024-03-06",
-      "author_name": "Mehedi Imun Anik",
+      "publish_date": "04-May-2024",
+      "author_name": "Kamrul Hasan",
       "image": digitalservice,
       "total_likes": "950"
     },
@@ -65,17 +65,17 @@ const servicesData = [
         "id": "7",
         "title": "Cybersecurity in the Digital Age",
         "description": "Navigate the evolving landscape of cybersecurity and the critical role it plays in safeguarding digital assets. From advanced threat detection to ethical hacking, this blog examines the strategies and technologies shaping the future of online security.",
-        "publish_date": "2024-03-06",
-        "author_name": "Mehedi Imun Anik",
+        "publish_date": "05-May-2024",
+        "author_name": "Mehedi Imun",
         "image": song_blog,
         "total_likes": "950"
       },
       {
         "id": "8",
-        "title": "Cybersecurity in the Digital Age",
+        "title": "hasem in the Digital Age",
         "description": "Navigate the evolving landscape of cybersecurity and the critical role it plays in safeguarding digital assets. From advanced threat detection to ethical hacking, this blog examines the strategies and technologies shaping the future of online security.",
-        "publish_date": "2024-03-06",
-        "author_name": "Mehedi Imun Anik",
+        "publish_date": "03-May-2024",
+        "author_name": "Abul Hasem",
         "image": wpicon,
         "total_likes": "950"
       },

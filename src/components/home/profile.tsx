@@ -17,7 +17,7 @@ const ProfileHome = () => {
         Eng. Abul Hasem
       </h1>
       <p className="text-sm sm:text-base">
-      As a Full-Stack Web Developer, I create reliable and scalable web applications that provide smooth user experiences. Skilled in both front-end and back-end development, I turn complex ideas into effective solutions.
+      As a Full-Stack Web Developer, I build user-friendly, efficient web applications. I handle both the visible parts users interact with (front-end) and the behind-the-scenes systems (back-end), ensuring smooth, scalable solutions that make complex ideas work seamlessly online.
       </p>
       <SocialPage/>
       <Downloadcv/>

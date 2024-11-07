@@ -99,7 +99,7 @@ const MySkillsPage = () => {
                     My Skills
                 </h2>
                 <p className="mt-4 px-4 md:px-20 text-lg md:text-xl font-semibold text-center">
-                    We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.
+                I’m skilled in Next.js, React, WordPress, MySQL, PHP, HTML, CSS, and Joomla. I work with front-end and back-end frameworks to create functional, responsive websites that work smoothly for users.
                 </p>
             </div>
             <section className="py-8">

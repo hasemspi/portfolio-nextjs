@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import servicesData from "@/actions/lattestblog";
+import lasstestBlog from "@/actions/createblog";
 const MyBlog = () => {
 
   return (
@@ -13,45 +13,98 @@ const MyBlog = () => {
             My Blog
           </h2>
           <p className="mt-4 px-4 md:px-20 text-lg md:text-xl font-semibold text-center">
-            We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.
+          My blog shares valuable insights, tips, and solutions for common web development challenges. I provide reliable, easy-to-follow advice to help developers create efficient and effective websites and applications.
           </p>
         </div>
         <div className="max-w-7xl mx-auto px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {servicesData.map((service) => (
-              <div
-                key={service.id}
-                className="relative group p-4 pb-10  rounded-lg border border-gray-200 overflow-hidden transform transition-transform hover:scale-105"
-              >
-                <div className="rounded-lg flex mb-4">
-                  {service.image ? (
-                    <Image
-                      src={service.image}
-                      alt={service.title}
-                      className="rounded-lg w-full h-auto sm:w-[200px] sm:h-[200px] object-cover"
+          {lasstestBlog
+      .sort((a, b) => Number(b.id) - Number(a.id))
+      .slice(0, 4) // Select only the latest 3 posts
+      .map((lattestblog) => (
 
+      <div key={lattestblog.id} className="relative group p-4 pb-10 rounded-lg border border-gray-200 overflow-hidden transform transition-transform hover:scale-105">
+        <div className="rounded-lg flex mb-4">
+          {lattestblog.image ? (
+            <Image
+              src={lattestblog.image}
+              alt={lattestblog.title}
+              className="rounded-lg w-full h-auto sm:w-[200px] sm:h-[200px] object-cover"
+            />
+          ) : (
+            <span className="text-gray-500">Image Not Found</span>
+          )}
+        </div>
 
-                    />
-                  ) : (
-                    <span className="text-gray-500">Image Not Found</span>
-                  )}
-                </div>
-                <h3 className="text-xl font-semibold  mb-2">
+        {/* First Line: Category and Date */}
+        <div className="flex items-center justify-between mb-2">
+          <div className="flex items-center">
+            {/* Author Profile Image */}
+              <Image
+                src={lattestblog.image}
+                alt={lattestblog.author_name}
+                className="w-5 h-5 rounded-full object-cover mr-2"
+              />
+            {/* Author Name */}
+            <Link href="#" className="text-sm text-gray-500">{lattestblog.author_name}</Link>
+          </div>
+          <span className="text-sm text-gray-500">
+            {lattestblog.publish_date}
+          </span>
+        </div>
 
-                  <Link href="#" className="text-blue-500 hover:underline">
-                    {service.title}
-                  </Link>
-                </h3>
-                <p className="text-left mb-4">
-                  {service.description.length > 170
-                    ? service.description.slice(0, 60) + "..."
-                    : service.description}
-                  </p>
-                <Link href="#" className="absolute bottom-6left-6 text-blue-500 group-hover:translate-x-2 transition-transform duration-300">
-                  Read More
-                </Link>
-              </div>
-            ))}
+        {/* Second Line: Post Title */}
+        <h3 className="text-sm font-semibold mb-2">
+          <Link href={`/blog/${lattestblog.id}`} className="text-blue-500 hover:underline">
+            {lattestblog.title}
+          </Link>
+        </h3>
+
+        {/* Third Line: Total Likes and Read More Link */}
+        <div className="flex justify-between items-center">
+          <Link href="#" className="text-sm text-gray-500">{lattestblog.total_likes} Likes</Link>
+          <Link href={`/blog/${lattestblog.id}`}
+            className="text-blue-500 hover:underline group-hover:translate-x-2 transition-transform duration-300"
+          >
+            Read More
+          </Link>
+        </div>
+      </div>
+
+    // <div
+    //   key={lattestblog.id}
+    //   className="relative group p-4 pb-10 rounded-lg border border-gray-200 overflow-hidden transform transition-transform hover:scale-105"
+    // >
+    //   <div className="rounded-lg flex mb-4">
+    //     {lattestblog.image ? (
+    //       <Image
+    //         src={lattestblog.image}
+    //         alt={lattestblog.title}
+    //         className="rounded-lg w-full h-auto sm:w-[200px] sm:h-[200px] object-cover"
+    //       />
+    //     ) : (
+    //       <span className="text-gray-500">Image Not Found</span>
+    //     )}
+    //   </div>
+    //   <h3 className="text-xl font-semibold mb-2">
+    //     <Link href={`/blog/${lattestblog.id}`} className="text-blue-500 hover:underline">
+    //       {lattestblog.title}
+    //     </Link>
+    //   </h3>
+    //   <p className="text-left mb-4">
+    //     {lattestblog.description.length > 170
+    //       ? lattestblog.description.slice(0, 60) + "..."
+    //       : lattestblog.description}
+    //   </p>
+    //   <Link
+    //     href={`/blog/${lattestblog.id}`}
+    //     className="absolute bottom-6 left-6 text-blue-500 group-hover:translate-x-2 transition-transform duration-300"
+    //   >
+    //     Read More
+    //   </Link>
+    // </div>
+       ))}
+
           </div>
         </div>
       </section>

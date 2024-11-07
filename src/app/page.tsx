@@ -5,7 +5,6 @@ import ProfileHome from "@/components/home/profile";
 import StatsSection from "@/components/home/statsSection";
 import Myservice from "@/components/service/myservice";
 import Portfolio from "@/components/service/portfolio";
-import TopUpButton from "@/components/shared/header/TopUpButton";
 
 export default function Home() {
   return (
@@ -17,7 +16,6 @@ export default function Home() {
 <Portfolio/>
 <MyBlog/>
 <ContactPage/>
-<TopUpButton/>
     </div>
   );
 }

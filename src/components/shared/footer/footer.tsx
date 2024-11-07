@@ -1,7 +1,10 @@
 import Link from "next/link";
+import TopUpButton from "../header/TopUpButton";
 
 const Footer = () => {
     return (
+      <>
+      <TopUpButton/>
   <div className="container">
     <footer className="footer text-base-content p-10 style={{ backgroundColor: 'var(--background)' }}">
       <nav>
@@ -58,6 +61,7 @@ const Footer = () => {
       </nav>
     </footer>
   </div>
+  </>
     );
 };
 

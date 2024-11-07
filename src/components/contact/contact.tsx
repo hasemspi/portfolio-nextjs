@@ -34,7 +34,7 @@ const ContactPage = () => {
         Contact Page
         </h2>
         <p className="mt-4 px-4 md:px-20 text-lg md:text-xl font-semibold text-center">
-          We put your ideas and thus your wishes in the form of a unique web project that inspires you and your customers.
+        Get in touch! Reach out for questions, support, or collaboration opportunities. I’m here to help!
         </p>
       </div>
 
