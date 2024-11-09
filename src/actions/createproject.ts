@@ -15,7 +15,9 @@ const initialWorksData= [
         link: '#',
         caption: 'Project Management Illustration',
         description: 'Project Management Illustration',
-        image: project1.src // Use the imported variable directly
+        image: project1,
+        project_public_date: "04-May-2024",
+        project_owner_name: "Kamrul Hasan",
     },
     {
         id: 2,
@@ -25,7 +27,9 @@ const initialWorksData= [
         link: '#workDialog',
         caption: 'Guest App Walkthrough Screens',
         description: 'Project Management Illustration',
-        image: project2.src
+        image: project2,
+        project_public_date: "04-May-2024",
+        project_owner_name: "Kamrul Hasan",
     },
     {
         id: 3,
@@ -35,7 +39,9 @@ const initialWorksData= [
         link: '#workDialog',
         caption: 'Guest App Walkthrough Screens',
         description: 'Project Management Illustration',
-        image: project3.src
+        image: project3,
+        project_public_date: "04-May-2024",
+        project_owner_name: "Kamrul Hasan",
     },
     {
         id: 4,
@@ -45,7 +51,9 @@ const initialWorksData= [
         link: 'https://www.youtube.com/watch?v=qf9z4ulfmYw',
         caption: 'Delivery App Wireframe',
         description: 'Project Management Illustration',
-        image: project4.src
+        image: project4,
+        project_public_date: "04-May-2024",
+        project_owner_name: "Kamrul Hasan",
     },
     {
         id: 5,
@@ -55,7 +63,9 @@ const initialWorksData= [
         link: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240233494&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
         caption: 'Onboarding Motivation',
         description: 'Project Management Illustration',
-        image: webdevelopment.src
+        image: webdevelopment,
+        project_public_date: "04-May-2024",
+        project_owner_name: "Kamrul Hasan",
     },
     {
         id: 6,
@@ -65,7 +75,9 @@ const initialWorksData= [
         link: 'https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/240233494&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true',
         caption: 'Onboarding Motivation',
         description: 'Project Management Illustration',
-        image: wordrepss.src
+        image: wordrepss,
+        project_public_date: "04-May-2024",
+        project_owner_name: "Kamrul Hasan",
     }
     
 ];

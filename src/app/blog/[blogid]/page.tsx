@@ -3,14 +3,44 @@ import Image from 'next/image';
 import Catagory from '../catagory';
 import Lattestblog from '../lattestblog';
 import Link from 'next/link';
+import { Metadata } from 'next';
 
 interface ProjectParams {
     blogid: string;
 }
 
+
+// Dynamic Metadata for SEO
+
+export async function generateMetadata({ params }:  { params: Promise<ProjectParams> }): Promise<Metadata> {
+    const { blogid } = await params;
+    console.log(params);
+    const bloginfo = initialWorksData.find(blog => blog.id.toString() === blogid);
+
+    if (!bloginfo) {
+        return {
+            title: "Blog Not Found",
+            description: "This blog does not exist.",
+        };
+    }
+
+    return {
+        title: `${bloginfo.title} - My Blog`,
+        description: bloginfo.description,
+        openGraph: {
+            title: bloginfo.title,
+            description: bloginfo.description,
+            images: bloginfo.image.src || bloginfo.image,
+            type: "article",
+            url: `https://yourwebsite.com/blog/${blogid}`,
+        },
+    };
+}
+
+
 const ProjectDetails = async ({ params }: { params: Promise<ProjectParams> }) => {
     const { blogid } = await params;
-
+    
     // Find the bloginfo that matches the bloginfoId
     const bloginfo = initialWorksData.find(bloginfo => bloginfo.id.toString() === blogid);
 
@@ -62,8 +92,6 @@ const ProjectDetails = async ({ params }: { params: Promise<ProjectParams> }) =>
             </section>
         </div>
         </>
-
-
     );
 };
 

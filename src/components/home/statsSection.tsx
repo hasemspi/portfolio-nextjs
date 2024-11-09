@@ -1,9 +1,9 @@
 
 const StatsSection = () => {
     const stats = [
-        { id: 1, value: "10", label: "Years of Experience" },
-        { id: 2, value: "40+", label: "Projects Completed" },
-        { id: 3, value: "1.5K", label: "Happy Clients" },
+        { id: 1, value: "8", label: "Years of Experience" },
+        { id: 2, value: "150+", label: "Projects Completed" },
+        { id: 3, value: "2.5K", label: "Happy Clients" },
       ];
 
     return (
