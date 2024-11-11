@@ -1,6 +1,6 @@
 import Link from "next/link";
 import TopUpButton from "../header/TopUpButton";
-
+import servicesData from '@/actions/createservice'; 
 const Footer = () => {
     return (
       <>
@@ -8,11 +8,14 @@ const Footer = () => {
   <div className="container">
     <footer className="footer text-base-content p-10 style={{ backgroundColor: 'var(--background)' }}">
       <nav>
-        <h6 className="footer-title">Services</h6>
-        <Link href="#">Digital Marketing</Link>
-        <Link href="#">Web Development</Link>
-        <Link href="#">UI/UX Design</Link> 
-        <Link href="#">WP Development</Link> 
+      <h6 className="footer-title">Services</h6>
+      
+      {servicesData.map((service) => (
+        <Link key={service.id} href={`/service/${service.id}`}>
+          {service.title}
+        </Link>
+      ))}
+
       </nav>
       <nav>
         <h6 className="footer-title">Company</h6>

@@ -1,10 +1,8 @@
 import Image from "next/image";
-
 import servicesData from '@/actions/createservice'; 
 import Link from "next/link";
+
 const Myservice = () => {
-
-
 
   return (
     <div>

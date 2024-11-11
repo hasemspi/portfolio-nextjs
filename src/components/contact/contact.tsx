@@ -136,7 +136,7 @@ const ContactPage = () => {
                 />
                 <div>
                   <h4 className="font-semibold">Phone</h4>
-                  <p>+01 123 654 8096</p>
+                  <p>+088 01987913922</p>
                 </div>
               </div>
 
@@ -150,7 +150,7 @@ const ContactPage = () => {
                 />
                 <div>
                   <h4 className="font-semibold">Email</h4>
-                  <p>gerolddesign@mail.com</p>
+                  <p>hasemspi@email.com</p>
                 </div>
               </div>
 
@@ -164,7 +164,7 @@ const ContactPage = () => {
                 />
                 <div>
                   <h4 className="font-semibold">Address</h4>
-                  <p>Warne Park Street Pine,<br /> FL 33157, New York</p>
+                  <p>kallyanpur Road-01 <br /> Mirpur-1</p>
                 </div>
               </div>
             </div>
